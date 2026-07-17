@@ -1,0 +1,14 @@
+{
+  "extends": ["github>betabitplus-template-lab/sandbox-ternforge-infra-updates-20260717-r2#v0.1.0"],
+  "automerge": false,
+  "enabledManagers": ["copier", "github-actions", "pep621", "pre-commit", "renovate-config"],
+  "pre-commit": {"enabled": true},
+  "packageRules": [
+    {
+      "matchManagers": ["pep621"],
+      "matchDepNames": ["py-lib-runtime", "py-lib-policy", "py-lib-testkit"],
+      "groupName": "split Python tooling",
+      "minimumGroupSize": 3
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+name: CI
+on:
+  pull_request:
+  push:
+jobs:
+  python-library:
+    uses: betabitplus-template-lab/sandbox-ternforge-infra-ci-20260717-r2/.github/workflows/python-library.yml@0cf8ab57a6cc16d69ac38e49e10f9f3489ecee5c # v0.1.0

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ternforge-python-consumer-r2"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = ["py-lib-runtime"]
+
+
+[dependency-groups]
+dev = [
+  "py-lib-policy",
+  "pyright>=1.1.400",
+  "ruff>=0.12",
+]
+test = ["py-lib-testkit", "pytest>=8"]
+
+[tool.uv.sources]
+py-lib-runtime = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git", tag = "v0.1.0" }
+py-lib-policy = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git", tag = "v0.1.0" }
+py-lib-testkit = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git", tag = "v0.1.0" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ternforge_python_consumer_r2"]
+
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.pyright]
+pythonVersion = "3.13"
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
