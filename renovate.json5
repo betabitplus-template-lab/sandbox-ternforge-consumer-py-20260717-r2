@@ -1,5 +1,5 @@
 {
-  "extends": ["github>betabitplus-template-lab/sandbox-ternforge-infra-updates-20260717-r2#v0.1.0"],
+  "extends": ["github>betabitplus-template-lab/sandbox-ternforge-infra-updates-20260717-r2#v0.2.0"],
   "automerge": false,
   "enabledManagers": ["copier", "github-actions", "pep621", "pre-commit", "renovate-config"],
   "pre-commit": {"enabled": true},
