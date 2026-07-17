@@ -4,4 +4,4 @@ on:
   push:
 jobs:
   python-library:
-    uses: betabitplus-template-lab/sandbox-ternforge-infra-ci-20260717-r2/.github/workflows/python-library.yml@0cf8ab57a6cc16d69ac38e49e10f9f3489ecee5c # v0.1.0
+    uses: betabitplus-template-lab/sandbox-ternforge-infra-ci-20260717-r2/.github/workflows/python-library.yml@d4888afe533f5e9dae136f908c39827c9c2f3487 # v0.2.0
