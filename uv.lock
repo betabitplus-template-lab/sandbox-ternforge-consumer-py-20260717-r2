@@ -296,21 +296,21 @@ wheels = [
 
 [[package]]
 name = "py-lib-policy"
-version = "0.1.0"
-source = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git?tag=v0.1.0#f4e06700ba0a443a11862cfe24f6b82b1e3f0418" }
+version = "0.2.0"
+source = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git?tag=v0.2.0#d44737a0887c6bf5d8702d03221845c62e0fed4b" }
 
 [[package]]
 name = "py-lib-runtime"
-version = "0.1.0"
-source = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git?tag=v0.1.0#35ef0618006ac58bcd1363c756d52318eb4c6ed3" }
+version = "0.2.0"
+source = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git?tag=v0.2.0#a4fa84809aa9c5aced3c0a367b23fbcc7f5466d0" }
 dependencies = [
     { name = "structlog" },
 ]
 
 [[package]]
 name = "py-lib-testkit"
-version = "0.1.0"
-source = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git?tag=v0.1.0#c33a8feb4438db5d36002a967d6f1c401b410055" }
+version = "0.2.0"
+source = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git?tag=v0.2.0#233ebec6a1106fd1b65b84803019494522338667" }
 dependencies = [
     { name = "ipython" },
     { name = "pillow" },
@@ -438,16 +438,16 @@ test = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "py-lib-runtime", git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git?tag=v0.1.0" }]
+requires-dist = [{ name = "py-lib-runtime", git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git?tag=v0.2.0" }]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "py-lib-policy", git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git?tag=v0.1.0" },
+    { name = "py-lib-policy", git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git?tag=v0.2.0" },
     { name = "pyright", specifier = ">=1.1.400" },
     { name = "ruff", specifier = ">=0.12" },
 ]
 test = [
-    { name = "py-lib-testkit", git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git?tag=v0.1.0" },
+    { name = "py-lib-testkit", git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git?tag=v0.2.0" },
     { name = "pytest", specifier = ">=8" },
 ]
 
