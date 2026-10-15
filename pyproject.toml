@@ -18,9 +18,9 @@ dev = [
 test = ["py-lib-testkit", "pytest>=8"]
 
 [tool.uv.sources]
-py-lib-runtime = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git", tag = "v0.1.0" }
-py-lib-policy = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git", tag = "v0.1.0" }
-py-lib-testkit = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git", tag = "v0.1.0" }
+py-lib-runtime = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-runtime-20260717-r2.git", tag = "v0.2.0" }
+py-lib-policy = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-policy-20260717-r2.git", tag = "v0.2.0" }
+py-lib-testkit = { git = "https://github.com/betabitplus-template-lab/sandbox-ternforge-tooling-py-testkit-20260717-r2.git", tag = "v0.2.0" }
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ternforge_python_consumer_r2"]
